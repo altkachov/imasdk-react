@@ -1,0 +1,37 @@
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.videos *:nth-child(1) {
+    flex: 1 1 0;
+}
+.videos ul li {
+    cursor: pointer;
+}
+.videos-list {
+    width: 300px;
+}
+.player {
+    margin: 0 25px;
+}
+.player .video-container {
+    position: relative;
+    /* forces the container to match a 16x9 aspect ratio */
+    /* replace with 75% for a 4:3 aspect ratio, if needed */
+    padding-bottom: 56.25%;
+}
+.player .video-container video {
+    /* forces the contents to fill the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.player .video-container .ad-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
