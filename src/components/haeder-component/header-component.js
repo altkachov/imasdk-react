@@ -1,6 +1,6 @@
 import logo from "../../logo.svg";
 import './header-component.css';
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default  function HeaderComponent() {
     return <div className="App">
@@ -8,8 +8,12 @@ export default  function HeaderComponent() {
             <span>Example App</span>
             <img src={logo} className="App-logo" alt="logo"/>
             <div className={'navigation'}>
-                <NavLink className={'navlink'} to={'/'}><span>Home</span></NavLink>
-                <NavLink className={'navlink'} to={'/videos'}>Videos</NavLink>
+                <NavLink to={'/'}><span>Home</span></NavLink>
+                <NavLink to={'/videos'}>Videos</NavLink>
+                <a href={'https://github.com/altkachov/imasdk-react'} target={'_blank'}>Repository</a>
+            </div>
+            <div>
+
             </div>
         </header>
         <br />
